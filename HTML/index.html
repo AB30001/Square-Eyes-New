@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My first website | Home</title>
+    <title>Square Eyes | Home</title>
     <meta name="home page" content="square eyes" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="C:\Users\arnas\Desktop\Studies\Noroff - Square Eyes\CSS\style.css\styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+
   </head>
   <body>
-    <header>
-      <img src="C:\Users\arnas\Desktop\Studies\Noroff - Square Eyes\Images\qqq1 1.jpg" alt="Logo" />
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+    <header> 
+      <div class="logo"> 
+        <img src="C:\Users\arnas\Desktop\Studies\Noroff - Square Eyes\Images\qqq1 1.jpg" alt="Logo" />
+
+        
+        
+      </div>
+
+      <div class="button"><button>Sign In</button></div> 
+      
+     
     </header>
     <main>
       <section>
@@ -25,11 +28,39 @@
         </p>
       </section>
     </main>
-    <footer>
-      <p>
-        If you need more info, you can
-        <a href="https://twitter.com">find me on Twitter</a>
-      </p>
-    </footer>
+        <footer class="footer">
+          <div class="footer-column">
+            <h3>Column 1</h3>
+            <p>Content of column 1</p>
+            <p>Content of column 1</p>
+            <p>Content of column 1</p>
+            <p>Content of column 1</p>
+          </div>
+          <div class="footer-column">
+            <h3>Column 2</h3>
+            <p>Content of column 2</p>
+            <p>Content of column 2</p>
+            <p>Content of column 2</p>
+            <p>Content of column 2</p>
+          </div>
+          <div class="footer-column">
+            <h3>Column 3</h3>
+            <p>Content of column 3</p>
+            <p>Content of column 3</p>
+            <p>Content of column 3</p>
+            <p>Content of column 3</p>
+          </div>
+          <div class="footer-column">
+            <h3>Column 3</h3>
+            <img src="C:\Users\arnas\Documents\GitHub\Square-Eyes\Images\qqq1 1.jpg" id="Logo">
+            <div class="subscription-form">
+              <p>Subscribe to our newsletter</p>
+              <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </footer>
   </body>
 </html>
