@@ -1,0 +1,38 @@
+/*ABOUT US*/
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: top; /* Center vertically */
+    height: auto; /* Set the height of the container */
+    padding: 20px; /* Add padding */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.image-container img {
+
+height: 424px;
+width: 753px;
+border-radius: 15px;
+}
+
+.text-container {
+background-color: #151416;
+padding: 50px;
+color: #FFFFFF;
+
+
+}
+
+.text-container h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.text-container p {
+font-size: 16px;
+line-height: 1.5;
+}
+.about-us-page {
+background-color: #161414;
+}

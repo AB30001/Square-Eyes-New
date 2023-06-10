@@ -1,30 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="header.css">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
 
-    <link rel="stylesheet" href="CSS/styles.css">
-    <title>Contact Form</title>
-  
+  <title>Contact Form</title>
 </head>
-<body>
-  <div class="container-container">
-    <form action="submit_form.php" method="POST">
-      <div class="form-group">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <div class="form-group">
-        <input type="submit" value="Submit">
-      </div>
-    </form>
+
+<body class="contact-form-body">
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo">
+      </a>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Classic</a></li>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Drama</a></li>
+        <li><a href="#">Horror</a></li>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">All Movies</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button class="search-btn">Search</button>
+    </div>
+    <div class="account">
+      <button class="account-btn">Account</button>
+      <button class="signout-btn">Sign Out</button>
+    </div>
+  </header>
+
+ 
+  <div class="container-contact">
+    <div class="content-left">
+      <h2 class="section-title">Let's discuss something together</h2>
+      <p class="contact-info">support@squareeyes.com</p>
+      <p class="contact-info">+552 663 221</p>
+      <p class="contact-info">794 Mcallister St San Francisco, California (CA), 94102</p>
+    </div>
+    <div class="content-right">
+      <form action="submit_form.php" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea class="textarea-field" id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="send-button"><i class="fa fa-telegram"></i> Send Message</button>
+        </div>
+      </form>
+    </div>
   </div>
+  
+  
+
+
+<footer class="footer">
+  <div class="footer-column">
+    <h3 class="footer-column-name">Company</h3>
+    <p>About Us</p>
+    <p>Why Choose us</p>
+    <p>Pricing</p>
+    <p>Testimonial</p>
+  </div>
+  <div class="footer-column">
+    <h3 class="footer-column-name">Resources</h3>
+    <p>Privacy Policy</p>
+    <p>Terms and Condition</p>
+    <p>Blog</p>
+    <p>Contact Us</p>
+  </div>
+  <div class="footer-column">
+    <h3 class="footer-column-name">Product</h3>
+    <p>Project managment</p>
+    <p>Time tracker</p>
+    <p>Time schedule</p>
+    <p>Lead generate</p>
+  </div>
+<div class="footer-column">
+    <h3 class="footer-column-name"> Column 4</h3>
+    <img src="logo.png" id="Logo">
+    <div class="subscription-form">
+      <p>Subscribe to our newsletter</p>
+      <form>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</footer>
+
+
 </body>
 </html>
