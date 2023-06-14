@@ -1,0 +1,49 @@
+
+.footer {
+    background-color: #161414;
+    color: rgba(255, 255, 255, 0.6); /* White color with 60% opacity */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: "column1 column2 column3";
+#Logo {
+    width: 50%; /* Adjust the width as needed */
+    height: 50%; /* Maintain aspect ratio */
+    margin-bottom: -40px; 
+    margin-left: -27px;
+}
+
+.footer-column-name {
+  color: #FFFFFF;
+}
+
+.subscription-form {
+  color: white;
+}
+
+  
+.subscription-form button[type="submit"] {
+padding: 10px 20px;
+background-color: #E5E5E5;
+color: #1D2130;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+.subscription-form input[type="email"] {
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 8px;
+color: #E5E5E5;
+background: #2B2E3C
+
+}
+.footer-column:nth-child(4) h3.footer-column-name {
+visibility: hidden;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}

@@ -1,14 +1,9 @@
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
+  
   
   /* Header Styles */
   header {
-    background-color: #161414;
+    background-color:transparent;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -25,6 +20,7 @@ body {
     list-style-type: none;
     display: flex;
     gap: 20px;
+    display: none;
   }
   
   .menu li a {
@@ -36,6 +32,7 @@ body {
   .search-bar {
     display: flex;
     gap: 10px;
+    display: none;
   }
   
   .search-bar input[type="text"] {
@@ -53,6 +50,7 @@ body {
     cursor: pointer;
     border: 1px solid #ffffff;
     border-radius: 15px;
+    display: none;
   }
   
   .search-btn:hover {
@@ -68,6 +66,7 @@ body {
     cursor: pointer;
     border: 1px solid #ffffff;
     border-radius: 15px;
+    display: none;
   }
   
   .signout-btn {
