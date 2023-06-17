@@ -118,6 +118,7 @@ body {
     cursor: pointer;
   }
   
+  
   .image-button:hover {
     opacity: 0.8;
   }
@@ -127,6 +128,8 @@ body {
     justify-content: left;
     align-items: center;
     gap: 10px;
+    width: 70%;
+    
     
   }
   .watch-button,
@@ -135,12 +138,13 @@ body {
   border: none;
   padding: 0;
   cursor: pointer;
+ 
 }
 
 .watch-button img,
 .download-button img {
-  width: 272px;
-  height: 80px;
+  width: 190.4px;/*30% smaller than original*/
+  height: 56px; /**30% smaller*/
 }
 .watch-button:hover img,
 .download-button:hover img {
@@ -189,5 +193,18 @@ body {
       align-items: flex-start;
     }
   }
+  .line {
+    border-style: solid;
+    border-color: #ff0000;
+    }
+
+
+    
+
+    
+
+
+  
+  
 
   
