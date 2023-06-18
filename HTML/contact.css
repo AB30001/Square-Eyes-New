@@ -1,10 +1,12 @@
 .container-contact {
     max-width: 708px;
-    margin: 60px auto; /* Adjust the margin value to control the space */
+    margin: 60px auto;
     padding: 40px;
     background: #EEEEEE;
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .content-left {
@@ -12,12 +14,7 @@
     background: #EEEEEE;
     border-radius: 15px;
     color: black;
-    font-family: Poppins;
-  }
-  
-  .content-right {
-    flex: 1;
-    margin-left: 40px;
+    margin-bottom: 20px;
   }
   
   .section-title {
@@ -35,14 +32,17 @@
     margin-bottom: 5px;
   }
   
-  .input-field {
+  .input-field,
+  .textarea-field {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    height: 250px;
   }
   
-  .input-field:focus {
+  .input-field:focus,
+  .textarea-field:focus {
     outline: none;
     border-color: #888;
   }
@@ -67,26 +67,32 @@
     background-color: #262424;
   }
   
-  .fa {
-    font-family: "Font Awesome";
-  }
-  
-  .textarea-field {
-    width: 300px;
-    height: 300px;
-  }
-  
   .contact-info {
     margin: 30px 0;
   }
-  #email {
-    width: 300px;
-    height: 15px;
-  }
-  #name {
-    width: 300px;
-    height: 15px;
-  }
-   body {
+  
+  body {
     background-color: #161414;
-   }
+  }
+  
+  /* Media Queries */
+  
+  @media screen and (max-width: 768px) {
+    .container-contact {
+      padding: 30px;
+      max-width: 70%;
+    }
+  
+    .content-left,
+    .content-right {
+      flex: 100%;
+    }
+  
+    .send-button {
+      width: 100%;
+    }
+    #invisible-column {
+        display: none;
+    }
+  }
+  

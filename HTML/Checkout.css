@@ -1,20 +1,15 @@
-
 .checkout-body {
-    background-color: #161414;  
-}
-
-.checkout-main {
-
-    width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #161414;
-}
-
-
-
-.checkout-container {
+    background-color: #161414;
+  }
+  
+  .checkout-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161414;
+  }
+  
+  .checkout-container {
     width: 912px;
     height: 796px;
     display: flex;
@@ -28,7 +23,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
   
   .right-side {
@@ -39,7 +33,7 @@
     background-image: url('bg-under-carddata.png');
     height: 400px;
     background-size: 100%;
-
+    background-repeat: no-repeat;
   }
   
   .product-image {
@@ -59,7 +53,6 @@
   
   .product-info {
     font-size: 16px;
-
   }
   
   .payment-details {
@@ -70,10 +63,9 @@
     margin: 20px;
   }
   
-  .card-icon {
-    width: 20%;
-    height: 20%;
-    display: none;
+  .mastercard-logo {
+    display: block;
+    margin: 0 auto;
     
   }
   
@@ -92,7 +84,7 @@
     color: white;
     padding: 15px 30px;
     margin: 30px;
-    font-family: Arial, Helvetica, sans-serif, Arial, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -102,11 +94,51 @@
   .pay-now-button:hover {
     background-color: #c79f1e;
   }
-
+  
   .bold-text {
     font-weight: bold;
   }
   
+  /* Media Queries */
+  
+  @media only screen and (max-width: 768px) {
+    .checkout-container {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .checkout-container,
+    .left-side,
+    .right-side {
+      flex-direction: column;
+    }
+  
+    .right-side {
+      background-image: none;
+    }
+  
+    .product-details {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .card-icon {
+      display: block;
+      width: 80px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .card-number,
+    .expiration-date,
+    .cvc-code {
+      width: 100%;
+      max-width: 300px;
+    }
 
-
+    #invisible-column {
+        display: none;
+    }
+  }
   

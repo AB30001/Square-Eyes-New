@@ -1,12 +1,15 @@
+body {
+    background-color: #161414;
+  }
+
 .container-payment-success {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
-    margin: 50px;
+    margin: 30px;
     background-color: #161414;
-    color: #FFFFFF
-  
+    color: #FFFFFF;
   }
   
   .content {
@@ -38,7 +41,7 @@
     align-items: center;
     padding: 10px;
     margin: 5px auto;
-    width: 365px;
+    max-width: 365px;
     height: 225px;
     background-color: #161414;
     color: #FFFFFF;
@@ -60,10 +63,13 @@
   .text-line {
     margin: 5px 0;
   }
+  #invisible-column {
+    display: none;
+  }
   
   .purchase-info {
     width: 796px;
-    height: 185px;
+    height: auto;
     margin: 50px auto;
     text-align: left;
     background-color: #161414;
@@ -75,20 +81,14 @@
     color: #FFFFFF;
     overflow: hidden;
   }
-
   
   .transaction-id {
-    color:rgba(255, 255, 255, 0.6);
-    ;
+    color: rgba(255, 255, 255, 0.6);
   }
-
-  .checkout-success-body {
-    background-color: #161414;
-  }
-
+  
   .centered-buttons {
     display: flex;
-    margin:5px, auto;
+    margin: 5px auto;
     justify-content: center;
     align-items: center;
     height: 25vh;
@@ -100,17 +100,57 @@
     border: none;
     background: none;
   }
+  
   .button:hover {
     opacity: 0.5;
   }
-
   
   .button img {
     width: 80%;
     height: 80%;
   }
+  .checkout-success-main {
+    background-color: #161414;
+  }
   
+  /* Media Queries */
   
+  @media (max-width: 768px) {
+    .container-payment-success {
+      flex-direction: column;
+      height: auto;
+      margin: 20px;
+    }
   
+    .icon-container {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .container-under-payment {
+      max-width: none;
+      width: 80%;
+    }
+  
+    .image-under-payment img {
+      width: 100px;
+      height: 140px;
+    }
+  
+    .purchase-info {
+      width: auto;
+      padding: 10px;
+      margin: 20px;
+    }
+  
+    .centered-buttons {
+      height: auto;
+      flex-direction: column;
+    }
+    #column-with-logo {
+        display: none;
+    }
+    
+  }
   
   

@@ -1,8 +1,10 @@
+/* General Styles */
+
 .herro-banner-movies {
     display: flex;
     align-items: flex-end;
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     background-image: url("hero-baner-movies.png");
     background-size: cover;
   }
@@ -93,8 +95,8 @@
     border: none;
     border-radius: 15px;
     margin-top: 10px;
-    
   }
+  
   .source-button a {
     color: #FFFFFF;
     text-decoration: none;
@@ -114,5 +116,74 @@
   
   .icon-line {
     background-color: #161414;
+  }
+  
+  /* Media Queries */
+  
+  @media screen and (max-width: 768px) {
+    .herro-banner-movies {
+      height: 60vh;
+    }
+    #invisible-column {
+        display: none;
+    }
+  
+    .herro-banner-movies .content {
+      padding: 20px;
+    }
+  
+    .herro-banner-movies h1 {
+      font-size: 30px;
+    }
+  
+    .herro-banner-movies h2 {
+      font-size: 18px;
+    }
+  
+    .herro-banner-movies .description {
+      font-size: 14px;
+    }
+  
+    .herro-banner-movies .source-button img {
+      width: 200px;
+      height: 60px;
+    }
+  
+    .product-item {
+      width: 45%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .herro-banner-movies {
+      height: 40vh;
+    }
+  
+    .herro-banner-movies .content {
+      padding: 10px;
+    }
+  
+    .herro-banner-movies h1 {
+      font-size: 24px;
+    }
+  
+    .herro-banner-movies h2 {
+      font-size: 16px;
+    }
+  
+    .herro-banner-movies .description {
+      font-size: 12px;
+    }
+  
+    .herro-banner-movies .source-button img {
+      width: 160px;
+      height: 48px;
+    }
+  
+    .product-item {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
   
