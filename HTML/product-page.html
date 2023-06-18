@@ -15,31 +15,54 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="logo.png" alt="Logo">
-      </a>
-    </div>
-    <nav>
-      <ul class="menu">
-        <li><a href="#">Classic</a></li>
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Drama</a></li>
-        <li><a href="#">Horror</a></li>
-        <li><a href="#">Romance</a></li>
-        <li><a href="#">All Movies</a></li>
-      </ul>
-    </nav>
-    <div class="search-bar">
-      <input type="text" placeholder="Search...">
-      <button class="search-btn">Search</button>
-    </div>
-    <div class="account">
-      <button class="account-btn">Account</button>
-      <button class="signout-btn">Sign Out</button>
-    </div>
-  </header>
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo.png" alt="Logo">
+          </a>
+        </div>
+        
+        
+        <div class="nav-desktop">
+          <nav>
+            <ul class="menu">
+              <li><a href="#" class="nav-link">Classic</a></li>
+              <li><a href="#" class="nav-link" >Action</a></li>
+              <li><a href="#" class="nav-link">Drama</a></li>
+              <li><a href="#" class="nav-link">Horror</a></li>
+              <li><a href="#" class="nav-link">Romance</a></li>
+              <li><a href="#" class="nav-link">All Movies</a></li>
+          </ul>
+          </nav>
+      </div>
+    
+      <div class="burger-wrapper">
+        <label for="hamburger-checkbox"><img src="hamburger-icon.png" alt="this is icon for hamburger menu"></label>
+        <input type="checkbox" id="hamburger-checkbox">
+        <nav>
+          
+          <li><a href="#" class="nav-link">Classic</a></li>
+          <li><a href="#" class="nav-link" >Action</a></li>
+          <li><a href="#" class="nav-link">Drama</a></li>
+          <li><a href="#" class="nav-link">Horror</a></li>
+          <li><a href="#" class="nav-link">Romance</a></li>
+          <li><a href="#" class="nav-link">All Movies</a></li>
+          
+        </nav>
+      </div>
+    
+    
+    
+    
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button class="search-btn">Search</button>
+        </div>
+        <div class="account">
+          <button class="account-btn">Account</button>
+          <button class="signout-btn">Sign Out</button>
+        </div>
+      </header>
 
   <main class="product-page-main">
     <div class="product-page">
@@ -57,8 +80,18 @@
       <div class="right-side">
         <h2 class="product-name">Movie: Sweetheart</h2>
         <div class="buttons">
-          <button class="watch-button"><img src="button-watch.png" alt="Watch"></button>
-          <button class="download-button"><img src="button-download.png" alt="Download"></button>
+            <a href="checkout.html">
+                <button class="watch-button">
+                  <img src="button-watch.png" alt="Watch">
+                </button>
+              </a>
+              
+              <a href="checkout.html">
+                <button class="download-button">
+                  <img src="button-download.png" alt="Download">
+                </button>
+              </a>
+              
         </div>
         <h2 class="storyline">Storyline</h2>
         <p class="storyline-text">"Sweetheart" is a 2019 drama movie about a young woman stranded on a deserted island who must confront a terrifying creature while struggling to survive. Starring Kiersey Clemons as Jenn, it's a thrilling and emotional story of isolation, survival, and the human spirit.</p>
@@ -120,7 +153,7 @@
   <footer class="footer">
     <div class="footer-column">
       <h3 class="footer-column-name">Company</h3>
-      <a href="#"><p>About Us</p></a>
+      <a href="about-us.html"><p>About Us</p></a>
       <a href="#"><p>Why Choose us</p></a>
       <a href="#"><p>Pricing</p></a>
       <a href="#"><p>Testimonial</p></a>
@@ -130,7 +163,7 @@
       <a href="#"><p>Privacy Policy</p></a>
       <a href="#"><p>Terms and Condition</p></a>
       <a href="#"><p>Blog</p></a>
-      <a href="#"><p>Contact Us</p></a>
+      <a href="contact.html"><p>Contact Us</p></a>
     </div>
     <div class="footer-column">
       <h3 class="footer-column-name">Product</h3>
@@ -140,8 +173,8 @@
       <a href="#"><p>Lead generation</p></a>
     </div>
     <div class="footer-column" id="invisible-column">
-      <h3 class="footer-column-name" id="column-4">Column-4</h3>
-      <img src="logo.png" id="Logo" alt="Logo">
+      <h3 class="footer-column-name" id="column-4"></h3>
+      <img src="logo.png" id="Logo">
       <div class="subscription-form">
         <p>Subscribe to our newsletter</p>
         <form>

@@ -147,6 +147,10 @@ body {
         display:none;
     }
   }
+
+  #column-4 {
+    display: none;
+  }
   
   /* Mobile Styles */
   @media (max-width: 480px) {

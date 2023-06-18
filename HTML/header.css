@@ -1,4 +1,3 @@
-
 html,
 body {
   margin: 0;
@@ -15,6 +14,7 @@ body {
     align-items: center;
     font-family: 
   }
+  
   
   .logo img {
     width: 99px;
@@ -85,4 +85,75 @@ body {
   .signout-btn:hover {
     background-color: #F02828;
     opacity: 0.7;
+  }
+  .burger-wrapper {
+    display: none;
+  }
+
+
+  
+  
+
+
+  @media (max-width: 768px) {
+    
+    
+    
+    .nav-desktop {
+        display:none;
+    }
+    .search-btn {
+        display: none;
+    }
+    
+    .burger-wrapper {
+        display: inline-block;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        
+    }
+        
+    .signout-btn {
+    display: none;    
+    }
+    
+    .logo img {
+        display:none;
+    }
+   
+
+    
+    
+    .nav-link {
+        display: block;
+    }
+    nav {
+        position: absolute;
+        left: -100px;
+        transition: 1s all;
+
+    }
+
+    #hamburger-checkbox:checked ~ nav {
+        left: 10px;
+    }
+    #hamburger-checkbox {
+        display: none;
+    }
+
+    .burger-wrapper nav {
+        list-style-type: none;
+      }
+      
+      .burger-wrapper nav li {
+        background-color: #161414;
+      }
+      
+      .burger-wrapper nav li a {
+        text-decoration: none;
+        color: #fff;
+      }
+      
+
   }

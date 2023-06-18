@@ -167,6 +167,9 @@ hr {
   color: white;
   margin-top: 5px;
 }
+#column-4 {
+    display:none;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
