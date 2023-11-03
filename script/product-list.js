@@ -9,13 +9,12 @@ async function fetchProducts() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const products = await response.json();
-        console.log(products); // This will log the JSON response to the console
+        console.log(products);
         displayProducts(products);
     } catch (error) {
         console.error('Error fetching products:', error);
     }
 }
-
 
 function displayProducts(products) {
     const productRow = document.querySelector('.product-row');
@@ -28,6 +27,10 @@ function displayProducts(products) {
     productRow.innerHTML = '';
 
     products.forEach(product => {
+        const productLink = document.createElement('a');
+        productLink.href = `product-page.html?id=${product.id}`;
+        productLink.classList.add('product-item-link');
+
         const productItem = document.createElement('div');
         productItem.classList.add('product-item');
 
@@ -42,12 +45,15 @@ function displayProducts(products) {
         description.textContent = product.description;
 
         const price = document.createElement('p');
-        price.textContent = `Price: ${product.price}`;
+        price.textContent = `Price: $${product.price}`;
 
         productItem.appendChild(image);
         productItem.appendChild(title);
         productItem.appendChild(description);
         productItem.appendChild(price);
-        productRow.appendChild(productItem);
+        productLink.appendChild(productItem);
+        productRow.appendChild(productLink);
     });
 }
+
+
