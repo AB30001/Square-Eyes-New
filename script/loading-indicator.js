@@ -1,10 +1,6 @@
-const loadingIndicator = document.getElementById('loading-indicator');
+// setTimeout
+const loading = document.querySelector(".loader");
 
-function showLoadingIndicator() {
-    if (loadingIndicator) loadingIndicator.style.display = 'block';
-}
-
-function hideLoadingIndicator() {
-    if (loadingIndicator) loadingIndicator.style.display = 'none';
-}
-
+setTimeout(function() {
+    loading.innerHTML = "Done loading!";
+}, 2000);
