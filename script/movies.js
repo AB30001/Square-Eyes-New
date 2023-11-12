@@ -3,15 +3,6 @@
 import { getMovies } from "./posts.js";
 import { renderMovies } from "./renderposts.js";
 
-
-
-
-
-
-
-
-
-
 export async function moviesPage() {
     const movies = await getMovies();
     renderMovies(movies);
@@ -19,6 +10,7 @@ export async function moviesPage() {
     
 
 }
+
 
 
    

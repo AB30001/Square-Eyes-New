@@ -13,3 +13,8 @@ export async function getMovie(id) {
     const movie = await response.json();
     return movie;
   }
+
+
+
+
+

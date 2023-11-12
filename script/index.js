@@ -11,3 +11,15 @@ if (location.pathname.includes("movies")) { // Check if the pathname includes th
 }
 
 
+
+const loading = document.querySelector(".loader");
+
+setTimeout(function() {
+    loading.innerHTML = "Done loading!";
+    
+    // Set a timeout to make "Done loading!" disappear after 1 second
+    setTimeout(function() {
+        loading.style.display = "none";
+    }, 1000);
+}, 2000);
+
