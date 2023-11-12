@@ -24,7 +24,7 @@ export function renderMovie(movieData) {
     }
 
     const movieElement = document.createElement("a");
-    movieElement.href = `/HTML/movie.html?id=${movieData.id}`;
+    movieElement.href = `/html/movie.html?id=${movieData.id}`;
     movieElement.className = "movie"; // class for styling
 
     const movieTitle = document.createElement("h3");
